@@ -4,7 +4,9 @@ import scipy.stats
 
 
 def test_column_names(data):
-
+    """
+    Test if expected columns exits
+    """
     expected_colums = [
         "id",
         "name",
@@ -31,7 +33,9 @@ def test_column_names(data):
 
 
 def test_neighborhood_names(data):
-
+    """
+    Test if just expected values in neighbourhood_group contained
+    """
     known_names = ["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"]
 
     neigh = set(data['neighbourhood_group'].unique())
@@ -60,6 +64,15 @@ def test_similar_neigh_distrib(data: pd.DataFrame, ref_data: pd.DataFrame, kl_th
     assert scipy.stats.entropy(dist1, dist2, base=2) < kl_threshold
 
 
-########################################################
-# Implement here test_row_count and test_price_range   #
-########################################################
+def test_row_count(data):
+    """
+    Test number of rows
+    """
+    assert 15000 < data.shape[0] < 1000000
+
+
+def test_price_range(data, min_price, max_price):
+    """
+    Test proper range of price (between min_price and max_price)
+    """
+    assert data['price'].between(min_price, max_price).all()
