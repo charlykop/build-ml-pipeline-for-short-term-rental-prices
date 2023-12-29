@@ -38,10 +38,6 @@ def go(args):
     logger.info('Change type to datetime of last_review column.')
     df['last_review'] = pd.to_datetime(df['last_review'])
 
-    # Handle missing values in 'reviews_per_month' column 
-    logger.info('Handle missing values in reviews_per_month column.')
-    df['reviews_per_month'].fillna(value=0, inplace=True)
-
     # Save dataframe to csv
     logger.info('Save dataframe.')
     filename = 'clean_sample.csv'
