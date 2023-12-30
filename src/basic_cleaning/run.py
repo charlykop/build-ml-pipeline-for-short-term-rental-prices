@@ -38,6 +38,10 @@ def go(args):
     logger.info('Change type to datetime of last_review column.')
     df['last_review'] = pd.to_datetime(df['last_review'])
 
+    # Ensure apartments are in NYC
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
+
     # Save dataframe to csv
     logger.info('Save dataframe.')
     filename = 'clean_sample.csv'
