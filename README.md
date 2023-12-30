@@ -13,6 +13,7 @@ In this project you will build such a pipeline.
   * [Fork the Starter Kit](#fork-the-starter-kit)
   * [Create environment](#create-environment)
   * [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
+  * [Weights and Bias Project](Weights and Biases Project)
   * [Cookie cutter](#cookie-cutter)
   * [The configuration](#the-configuration)
   * [Running the entire pipeline or just a selection of steps](#Running-the-entire-pipeline-or-just-a-selection-of-steps)
@@ -71,6 +72,9 @@ You should see a message similar to:
 ```
 wandb: Appending key for api.wandb.ai to your netrc file: /home/[your username]/.netrc
 ```
+
+### Weights and Biases Project
+The weights and Biases Project can be found here [https://wandb.ai/charly-ko/nyc_airbnb/overview](https://wandb.ai/charly-ko/nyc_airbnb/overview).
 
 ### Cookie cutter
 In order to make your job a little easier, you are provided a cookie cutter template that you can use to create 
