@@ -11,6 +11,7 @@ In this project you will build such a pipeline.
 - [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
 - [Preliminary steps](#preliminary-steps)
   * [Fork the Starter Kit](#fork-the-starter-kit)
+  * [My git repository](#my-git-repository)
   * [Create environment](#create-environment)
   * [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
   * [Weights and Bias Project](#weights-and-biases-project)
@@ -49,6 +50,9 @@ cd build-ml-pipeline-for-short-term-rental-prices
 ```
 Commit and push to the repository often while you make progress towards the solution. Remember 
 to add meaningful commit messages.
+
+### My git repository
+Here is the link to my git repository [https://github.com/charlykop/build-ml-pipeline-for-short-term-rental-prices.git](https://github.com/charlykop/build-ml-pipeline-for-short-term-rental-prices.git) . 
 
 ### Create environment
 Make sure to have conda installed and ready, then create a new environment using the ``environment.yml``
