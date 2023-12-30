@@ -13,7 +13,7 @@ In this project you will build such a pipeline.
   * [Fork the Starter Kit](#fork-the-starter-kit)
   * [Create environment](#create-environment)
   * [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
-  * [Weights and Bias Project](Weights and Biases Project)
+  * [Weights and Bias Project](#weights-and-biases-project)
   * [Cookie cutter](#cookie-cutter)
   * [The configuration](#the-configuration)
   * [Running the entire pipeline or just a selection of steps](#Running-the-entire-pipeline-or-just-a-selection-of-steps)
